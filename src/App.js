@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style/Countdown.css";
+import Countdown from "./components/Countdown";
+import Header from "./components/Header";
+import Confetti from "react-confetti";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    //const { innerWidth, innerHeight } = window;
+    return (
+        <div className="App">
+            <Confetti width={window.innerWidth} height={window.innerHeight} />
+            <div className="main">
+                <Header />
+                <Countdown date="2024-09-24T00:00:00" />
+            </div>
+        </div>
+    );
 }
 
 export default App;

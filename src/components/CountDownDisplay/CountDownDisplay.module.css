@@ -1,0 +1,11 @@
+.countdownCol {
+    color: fuchsia;
+    padding: 0 5px;
+}
+strong + span {
+    color: mediumpurple;
+    text-transform: uppercase;
+}
+strong {
+    font-size: 2.5rem;
+}
